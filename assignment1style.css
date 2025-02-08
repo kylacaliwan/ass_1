@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    background-image: linear-gradient(to bottom right, #eb31148e, #f36813cc, #d84b0eb6);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.wrapper>* {
+    flex: 100%;
+}
+
+
+/* MY HEADER */
+.header {
+    background: url(vb.avif) no-repeat center / cover;
+    height: 250px;
+}
+
+
+/* MY WEBSITE TEXT */
+.text {
+    padding-top: 50px;
+    border-top: 1px solid rgba(16, 194, 76, 0.65);
+    border-left: 1px solid rgba(9, 102, 29, 0.65);
+    box-shadow: 0 4px 30px rgba(5, 63, 31, 0.1);
+    backdrop-filter: blur(7px);
+    width: 70%;
+    margin: 65px auto;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+
+/* GLOW EFFECT OF THE TEXT */
+.glow {
+    letter-spacing: 10px;
+    color: #f9bdf9;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+
+
+/* NAVIGATION BAR */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Moves the items to the right */
+    align-items: center;
+    height: 50px;
+    background: linear-gradient(to right, rgba(165, 42, 42, 0.737), #ac2c2c88, #96082266);
+    color: #f6f6f6;
+    font-family: 'Poppins', serif;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #f2fafd;
+    text-decoration: none;
+    padding: 0 23px;
+    height: 20px;
+}
+
+
+/* THE CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+ /* BOX1 AND BOX2 */
+.box1, .box2 {
+    box-shadow: 0 4px 8px 0 rgba(105, 9, 12, 0.365), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to right, #9b50129f, #79060c92, #94063182);
+    backdrop-filter: blur(10px);
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.box1 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+.box2 {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 10px;
+}
+
+/* IMAGE1 */
+.image1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* IMAGE2 */
+.image2 img {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+h2 {
+    font-size: 2rem;
+    color: #e9b0e9;
+    letter-spacing: 3px;    
+}
+p {
+    color: #fff7ff;
+}
+
+
+@media (min-width: 768px) {
+    .box1, .box2 {
+        margin: 30px;
+    }
+
+    .box1 {
+        flex: 1 1 20%;
+    }
+
+    .box2 {
+        flex: 1 1 50%;
+    }
+
+    .container {
+        justify-content: center;
+    }
+}
+
+
+/* --------------------------- FOR DESKTOP SIZE ----------------------------------  */
+@media (min-width: 1080px) {
+    .box1 {
+        width: 20%;
+    }
+
+    .box2 {
+        width: 50%;
+    }
+}
+
+
+/* --------------------------- FOR TABLET SIZE ---------------------------------- */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1, .box2 {
+        max-width: 70%;
+        margin: 15px 0;
+    }
+}
+
+/* --------------------------- FOR PHONE SIZE ---------------------------------- */
+@media (max-width: 480px) {
+    .header {
+        height: 200px;
+    }
+
+    .text {
+        width: 50%;
+    }
+    .glow{
+        font-size: 20px;
+    }
+
+    .box1 {
+        max-width: 70%;
+        padding: 10px;
+    }
+
+    .box2 {
+        max-width: 70%;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+        padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+}
